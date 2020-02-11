@@ -1,0 +1,20 @@
+* {
+    background: white;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column ;
+
+}
+
+
+#start {
+    color: grey;
+    border-color: lightcoral;
+    font-size: 30px;
+}
