@@ -29,6 +29,9 @@ const dareList = [
     "Swipe right for the next 30 seconds and if they message, you have to hold a conversation with them"
 ]
 
+console.log(dareList[3]);
+console.log(truthList[0]);
+
 // make the functions to call the Truths in random
 
 // make the functions to call the Dares in random
@@ -42,4 +45,5 @@ const dareList = [
     // nope button
     // 
 
-//
+// create a function that will show when a player wins
+// make a function to show points earned 

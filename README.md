@@ -2,6 +2,9 @@
 
 Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
 
+What is Tin-Dare and why?
+Tin-Dare is a basic game of truth or dare with some twists involving the dating app, Tinder. This game is meant to play with a friend during various social gatherings. This game can be used as a party game to get some good laughs with friends or to break the ice with new friends. Although this game deals with other people as well, it is ultimately up to the players to decide if they want to complete the task or not. 
+
 User Stories:
 1. User will go onto the site
     1a. user clicks "Happy Swiping" button to start the game 
@@ -18,3 +21,11 @@ User Stories:
     8a. If user coompleted the task, user will choose "Did It" button and will then receive the point. 
     8b. If user does not complete the task, user will choose "NOPE" button and will not receive the point. 
 9. The next players turn will start after the previous player chooses either of the choices saying the task was completed or not 
+
+Explanation of technologies:
+- The "Happy Swiping" button starts the game 
+- Truth button will give a random Truth to the player
+- Dare button will give a random Dare to the player
+- Random will give either a truth or dare to the player
+- Truth and Dare options are worth 1 point if they complete 
+- Random option is worth 2 points if they complete
