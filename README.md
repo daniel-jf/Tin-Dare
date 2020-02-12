@@ -29,3 +29,5 @@ Explanation of technologies:
 - Random will give either a truth or dare to the player
 - Truth and Dare options are worth 1 point if they complete 
 - Random option is worth 2 points if they complete
+- The "Did it!" button means the player completed the task and will receive a point 
+- The "NOPE!" button means the player did not complete and does not get a point 
