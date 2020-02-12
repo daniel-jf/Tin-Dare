@@ -71,8 +71,21 @@ h1 {
     flex-direction: row;    
 }
 
+
+#t:disabled{
+    opacity: 0.5;
+}
+#r:disabled{
+    opacity: 0.5;
+}
+#d:disabled{
+    opacity: 0.5;
+}
+
+
+
 #t:hover{
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #d:hover {
@@ -83,3 +96,5 @@ transform: scale(1.1);
     transform: scale(1.1);
 }
 
+
+/* disable to did it button, did it button to undo disable */

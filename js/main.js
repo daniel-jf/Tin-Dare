@@ -1,7 +1,10 @@
 //console.log("You got this, don't worry");
 
+
+
+const masterList= {
 // make the array for truths
-const truthList = [
+truthList: [
     'Have you ever ghosted someone on tinder?',
     'Worst tinder date in detail',
     'Have you ever hooked up with a tinder date',
@@ -12,10 +15,9 @@ const truthList = [
     'Admit your biggest mistake to your opponent and a match on tinder',
     'Admit why you would not date youself and that most people do not learn until they date you',
     'Explain why you chose each picture on your profile and who you are hoping to attract'
-]
-
+],
 // make the array for dares
-const dareList = [
+dareList: [
     "Swipe right on the next 5 people",
     "Let the other player swipe the next 10 people",
     "Let the other player choose a pick-up line and send it to your last match",
@@ -28,40 +30,53 @@ const dareList = [
     "Message 3 matches saying you only made a tinder to piss off your boyfriend",
     "Swipe right for the next 30 seconds and if they message, you have to hold a conversation with them"
 ]
+}
+
+
+
+
+
+
 
 // FUNCTIONS 
-
-// make the functions to call the Truths in random
-function randomTruth() {
-    for (let tListIdx = truthList.length -1; tListIdx >0; tListIdx--){
-    return truthList[Math.floor(Math.random() * truthList.length)]
-    };
-}
-randomTruth();
-console.log(randomTruth(truthList));
-
-// make the functions to call the Dares in random
-function randomDare() {
-    for (let dListIdx = dareList.length +1; dListIdx > 0; dListIdx--){
-      return dareList[Math.floor(Math.random() * dareList.length)]
-    };
-}
-randomDare();
-console.log(randomDare(dareList));
-
-
-// make a function that will choose a random truth or dare
-
-
 // manipulate teh DOM for user interactions
 
-    // random button
-    // truth button
-    // dare button
+
+
+
+// make the functions to call the Truths in random upon clicking the truth button
+function randomTruth() {
+         console.log(masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)]);
+    }
+    const tButton = document.getElementById('t');
+        tButton.addEventListener("click", randomTruth);
+
+
+// make the functions to call the Dares in random upon clicking the dare button
+function randomDare() {
+    console.log(masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)]);
+}
+    const dButton = document.getElementById('d');
+        dButton.addEventListener("click", randomDare);
+
+
+// make the function to call a random in random upon clicking the random button
+function random() {
+    if (Math.floor(Math.random() * 2)) {
+        console.log(masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)]);
+    } else {
+        console.log(masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)]);
+    }
+}
+    const rButton = document.getElementById('r');
+        rButton.addEventListener("click", random);
+
+
     // did it button
+
     // nope button
 
 
 // create a function that will show when a player wins
 
-// make a function to show points earned 
+// make a function to show points earned
