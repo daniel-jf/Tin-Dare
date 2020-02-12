@@ -1,20 +1,85 @@
-* {
-    background: white;
-}
+ * {
+    font-family: 'Nunito', sans-serif;
+ }
 
 body {
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     flex-direction: column ;
-
+    background-color: lightcoral;
 }
 
+h1 {
+    color: lightcyan;
+    font-size: 80px;
+    border-radius: 20px;
+    border-color: lightcyan;
+    border-width: medium;
+}
+
+#instruction {
+    background-color: lightcyan;
+    border-radius: 30px;
+    padding: 10px 20px 20px 40px;
+
+}
 
 #start {
-    color: grey;
-    border-color: lightcoral;
-    font-size: 30px;
+    background-color: lightcoral;
+    color: black;
+    border-color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-width: thick;
+    margin-top: 20px;
 }
+
+
+
+
+/* CSS code for Game Page */
+#game {
+    background-color: lightcyan;
+    border-radius: 30px;
+    padding: 10px 80px 20px 80px;
+}
+
+#player1 {
+    float: left;
+}
+
+#player2 {
+    float: right;
+}
+
+.choices button {
+    background-color: lightcoral;
+    color: black;
+    border-color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-width: medium;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;    
+}
+
+#t:hover{
+transform: scale(1.1);
+}
+
+#d:hover {
+    transform: scale(1.1);
+}
+
+#r:hover{
+    transform: scale(1.1);
+}
+

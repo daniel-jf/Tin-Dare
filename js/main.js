@@ -41,7 +41,7 @@ randomTruth();
 console.log(randomTruth(truthList));
 
 // make the functions to call the Dares in random
-randomDare = function() {
+function randomDare() {
     for (let dListIdx = dareList.length +1; dListIdx > 0; dListIdx--){
       return dareList[Math.floor(Math.random() * dareList.length)]
     };
@@ -54,15 +54,14 @@ console.log(randomDare(dareList));
 
 
 // manipulate teh DOM for user interactions
+
+    // random button
     // truth button
     // dare button
-    // random button
-    // start button
     // did it button
     // nope button
 
 
 // create a function that will show when a player wins
-
 
 // make a function to show points earned 
