@@ -1,6 +1,3 @@
-//console.log("You got this, don't worry");
-
-
 
 const masterList= {
 // make the array for truths
@@ -16,7 +13,6 @@ truthList: [
     'Admit why you would not date youself and that most people do not learn until they date you',
     'Explain why you chose each picture on your profile and who you are hoping to attract',
     'Read your last 3 messages. Did you repond to them?'
-
 ],
 // make the array for dares
 dareList: [
@@ -41,8 +37,8 @@ class Game {
         this.player1Points = 0;
         this.player2Points = 0;
         this.rounds = 1;
-    };
-};
+    }
+}
 
 
 var modal = document.getElementById("myModal");
@@ -55,16 +51,24 @@ var noPoint = document.getElementById("nope");
 
 tButton.onclick = function() {
     modal.style.display = "block";
-    document.getElementById('t').showModal(masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)]);
+    document.getElementById('message').innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
 }
 
 dButton.onclick = function() {
     modal.style.display = "block";
+    document.getElementById('message').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
+
 }
 
 rButton.onclick = function() {
     modal.style.display = "block";
+    if (Math.floor(Math.random() * 2)) {
+       document.getElementById('message').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
+    } else {
+       document.getElementById('message').innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
+    }
 }
+
 
 point.onclick = function() {
     modal.style.display = "none";
@@ -74,55 +78,31 @@ noPoint.onclick = function() {
     modal.style.display = "none";
 }
 
-// FUNCTIONS 
-
-
-
-
-// make the functions to call the Truths in random upon clicking the truth button
-// function randomTruth() {
-//          alert(masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)]);
-//     }
-//     const tButton = document.getElementById('t');
-//           tButton.addEventListener("click", randomTruth);
-
-
-// // make the functions to call the Dares in random upon clicking the dare button
-// function randomDare() {
-//     alert(masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)]);
-// }
-//     const dButton = document.getElementById('d');
-//           dButton.addEventListener("click", randomDare);
-
-
-// // make the function to call a random in random upon clicking the random button
-// function random() {
-//     if (Math.floor(Math.random() * 2)) {
-//         alert(masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)]);
-//     } else {
-//         alert(masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)]);
-//     }
-// }
-//     const rButton = document.getElementById('r');
-//           rButton.addEventListener("click", random);
-
 
 // // create a function for player turns 
 function makeTurn(player1, player2) {
    
 }
 
-// create a function to pop up the truth, dare, or random 
-
-
 
 
 // create a function for the did it button to give the point and return to game page
-
 // create a function for nope button to give no points and return to game page
-
 // create a function for random & did it gives 2 points and returns to game page 
 
+//FOR PLAYER 1
+// if (player1 = p1Points random && did === true, return p1Points += 2)
+// else if (player1 = p1Points truth && did === true, return p1Points += 1 
+//                 || player 1 = p1Points dare && did === true, return p1Points +=1);
+// else return p1Points = p1Points
+
+
+//FOR PLAYER 2
+// if (player2 = p2Points random && did === true, return p2Points += 2)
+// else if (player2 = p2Points truth && did === true, return p2Points += 1 
+//                 || player 2 = p2Points dare && did === true, return p2Points +=1);
+// else return p2Points = p2Points
 // make a function to show points earned
 
 // create a function that will show when a player wins
+
