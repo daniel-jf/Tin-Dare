@@ -22,7 +22,7 @@ User Stories:
     8b. If user does not complete the task, user will choose "NOPE" button and will not receive the point. 
 9. The next players turn will start after the previous player chooses either of the choices saying the task was completed or not 
 
-Explanation of technologies:
+Explanation of buttons:
 - The "Happy Swiping" button starts the game 
 - Truth button will give a random Truth to the player
 - Dare button will give a random Dare to the player
