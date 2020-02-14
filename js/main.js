@@ -27,82 +27,133 @@ dareList: [
     "Change your picture on tinder to an embarrassing one",
     "Message 3 matches saying you only made a tinder to piss off your boyfriend",
     "Swipe right for the next 30 seconds and if they message, you have to hold a conversation with them",
-    "Google pick up lines and let the other player choose one to put in bio"
+    "Google pick up lines and let the other player choose one to put in bio",
+    "Swipe 2 times to the right and once to the left",
+],
+challengeList: [
+    "Upload a provocative picture on your tinder",
+    "Swipe right for 10 seconds and if you match, message them you want to hook up",
+    "Let your oponent read your last tinder conversation",
+
 ]
 }
 
-class Game {
-    constructor(playGame){
-        this.playedList = [];
-        this.player1Points = 0;
-        this.player2Points = 0;
-        this.rounds = 1;
-    }
-}
+
+//VARIABLES 
+
+const modal = document.getElementById("myModal");
+const tButton = document.getElementById('t');
+const dButton = document.getElementById('d');
+const point = document.getElementById("did");
+const noPoint = document.getElementById("nope");
+
+const rModal = document.getElementById("myRModal");
+const rButton = document.getElementById('r');
+const rPoint = document.getElementById('rDid');
+const rNoPoint = document.getElementById('rNope');
+
+const p1 = document.getElementById('player1');
+const p2 = document.getElementById('player2');
+
+const scoreboard = {p1Points: '', p2Points: ''};
+
+const player1 = 'Player 1';
+const player2 = 'Player 2';
+
+let turn = 1;
 
 
-var modal = document.getElementById("myModal");
-var tButton = document.getElementById('t');
-var dButton = document.getElementById('d');
-var rButton = document.getElementById('r');
-var point = document.getElementById("did");
-var noPoint = document.getElementById("nope");
+//FUNCTIONS FOR PLAYER POINTS
+// Player 1 score 
+p1.textContent = "Player 1: "+scoreboard.p1Points;
 
 
+// Player 2 score
+p2.textContent = "Player 2: "+scoreboard.p2Points;
+
+
+
+// FUNCTIONS FOR BUTTONS
+
+//For truth button
 tButton.onclick = function() {
     modal.style.display = "block";
     document.getElementById('message').innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
 }
 
+//For dare button
 dButton.onclick = function() {
     modal.style.display = "block";
     document.getElementById('message').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
 
 }
 
+//For random button
 rButton.onclick = function() {
-    modal.style.display = "block";
+    rModal.style.display = "block";
     if (Math.floor(Math.random() * 2)) {
-       document.getElementById('message').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
+       document.getElementById('rMessage').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
     } else {
-       document.getElementById('message').innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
+    document.getElementById('rMessage').innerText = masterList.challengeList[Math.floor(Math.random() * masterList.challengeList.length)];
+    }
+}
+
+//For did it button
+point.onclick = function() {
+    if (turn == 1){
+    scoreboard.p1Points++;
+
+    p1.textContent = `Player 1: ${ scoreboard.p1Points }`
+    modal.style.display = "none";
+
+    } else {
+    scoreboard.p2Points++;
+    p2.textContent = ` Player 2: ${scoreboard.p2Points} `
+    }
+  
+    modal.style.display = "none";
+    turn *= -1;
+
+    if (scoreboard.p1Points == 3) {
+        alert("Congrats! "+ player1 + " won!")
+    } else if (scoreboard.p2Points == 3) {
+        alert("Congrats! "+ player2 + " won!")
+    }
+}
+
+//For nope button
+noPoint.onclick = function() {
+    modal.style.display = "none";
+    turn *= -1;
+}
+
+//For random did it button
+rPoint.onclick = function() {
+    if (turn == 1 ){
+    scoreboard.p1Points += 2;
+    p1.textContent = `Player 1: ${ scoreboard.p1Points }`
+    modal.style.display = "none";
+
+    } else {
+    scoreboard.p2Points += 2;
+    p2.textContent = ` Player 2: ${scoreboard.p2Points} `
+    }
+  
+    rModal.style.display = "none";
+    turn *= -1;
+
+    if (scoreboard.p1Points == 3) {
+        alert("Congrats! "+ player1 + " won!")
+    } else if (scoreboard.p2Points == 3) {
+        alert("Congrats! "+ player2 + " won!")
     }
 }
 
 
-point.onclick = function() {
-    modal.style.display = "none";
-}
-
-noPoint.onclick = function() {
-    modal.style.display = "none";
+//For random nope button
+rNoPoint.onclick = function() {
+    rModal.style.display = "none";
 }
 
 
-// // create a function for player turns 
-function makeTurn(player1, player2) {
-   
-}
-
-
-
-// create a function for the did it button to give the point and return to game page
-// create a function for nope button to give no points and return to game page
 // create a function for random & did it gives 2 points and returns to game page 
-
-//FOR PLAYER 1
-// if (player1 = p1Points random && did === true, return p1Points += 2)
-// else if (player1 = p1Points truth && did === true, return p1Points += 1 
-//                 || player 1 = p1Points dare && did === true, return p1Points +=1);
-// else return p1Points = p1Points
-
-
-//FOR PLAYER 2
-// if (player2 = p2Points random && did === true, return p2Points += 2)
-// else if (player2 = p2Points truth && did === true, return p2Points += 1 
-//                 || player 2 = p2Points dare && did === true, return p2Points +=1);
-// else return p2Points = p2Points
-// make a function to show points earned
-
-// create a function that will show when a player wins
-

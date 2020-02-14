@@ -18,6 +18,7 @@ h1 {
     border-radius: 20px;
     border-color: lightcyan;
     border-width: medium;
+
 }
 
 #instruction {
@@ -48,15 +49,29 @@ h1 {
     border-radius: 30px;
     border-color: black;
     border-width: medium;
-    padding: 10px 80px 20px 80px;
+    padding: 10px 20px 20px 20px;
+    width: 350px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
 }
 
 #player1 {
-    float: left;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
 #player2 {
-    float: right;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.choices {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .choices button {
@@ -69,8 +84,7 @@ h1 {
     border-radius: 20px;
     border-width: medium;
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;    
+    display: block;
 }
 
 #t:hover{
@@ -97,45 +111,122 @@ h1 {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
   
-  /* Modal Content/Box */
-  .modal-content {
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     border-radius: 20px;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
+    border-width: medium;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
   
-  /* The Close Button */
-  #did {
-    color: #aaa;
+/* The Close Button */
+#did {
+    color: black;
     float: left;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: thin;
     border-radius: 20px;
-  }
+    background-color: lightgreen;
+    border-width: medium;
+    display: inline-block;
+}
 
-  #nope {
-      color: #aaa;
-      float: inline-end;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 20px;
-  }
+#nope {
+    color: black;
+    float: inline-start;
+    font-size: 20px;
+    font-weight: thin;
+    border-radius: 20px;
+    background-color: lightpink;
+    border-width: medium;
+    display: inline-block;
+}
   
-  #did:hover,
-  #did:focus {
+#did:hover,
+#did:focus {
     color: lightcoral;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  #nope:hover,
-  #nope:focus {
+#nope:hover,
+#nope:focus {
     color: lightcoral;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+
+
+
+
+
+
+
+
+/* RANDOM MODAL */
+.rModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,1); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.r-modal-content {
+    background-color: lightcoral;
+    margin: 15% auto; /* 15% from the top and centered */
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-width: medium;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+  
+/* The Close Button */
+#rDid {
+    color: black;
+    float: left;
+    font-size: 20px;
+    font-weight: thin;
+    border-radius: 20px;
+    background-color: lightgreen;
+    border-width: medium;
+    display: inline-block;
+}
+
+#rNope {
+    color: black;
+    float: inline-start;
+    font-size: 20px;
+    font-weight: thin;
+    border-radius: 20px;
+    background-color: lightpink;
+    border-width: medium;
+    display: inline-block;
+}
+  
+#rDid:hover,
+#rDid:focus {
+    color: lightcoral;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rNope:hover,
+#rNope:focus {
+    color: lightcoral;
+    text-decoration: none;
+    cursor: pointer;
+}

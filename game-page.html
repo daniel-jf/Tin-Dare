@@ -14,25 +14,35 @@
     <h1>tinDARE</h1>
     <main id="game">
         <h2>Let's Get Swiping!</h2>
-                    <p id="player1">Player 1</p>
-                    <p id="player2">Player 2</p>
+            <div class="score-board">
+                <label id="player1"></label>
+                <label id="player2"></label>
+            </div>
 
-                 <ul class="choices">
-                    <button id="t">Truth</button>
-                    <button id="d">Dare</button>
-                    <button id="r">Random</button>   
-                </ul> 
+            <div class="choices">
+                <button id="t">Truth</button>
+                <button id="d">Dare</button>
+                <button id="r">Challenge</button>   
+            </ul> 
 
             <div id="myModal" class="modal">
                <div class="modal-content">
+                   <p id="message"></p>
                    <button id="did">DID IT!</button>
                    <button id="nope">NOPE!</button>
 
-                   <p id="message"></p>
                
                 </div>
             </div>
 
+            <div id="myRModal" class="rModal">
+                <div class="r-modal-content">
+                    <h2 id="challenge">CHALLENGE:</h2>
+                    <p id="rMessage"></p>
+                    <button id="rDid">DID IT!</button>
+                    <button id="rNope">NOPE!</button>
+                 </div>
+             </div>
     </main>
 </body>
 </html>
