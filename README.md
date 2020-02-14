@@ -31,3 +31,7 @@ Explanation of technologies:
 - Challenge option is worth 2 points if they complete
 - The "LIKE!" button means the player completed the task and will receive a point 
 - The "NOPE!" button means the player did not complete and does not get a point 
+
+Challenges:
+I wanted the "like" and "nope" button to swipe left or right like how it would on the actual tinder app, but after trying to do some new modals my code would break.
+I wanted my "tinDARE" text to have a black lining around the letters but when I tried editing on CSS it didn't work.
