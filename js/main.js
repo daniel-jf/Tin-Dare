@@ -11,7 +11,7 @@ truthList: [
     'Admit your biggest mistake to your opponent and a match on tinder',
     'Admit why you would not date youself and what most people do not know until they date you',
     'Explain why you chose each picture on your profile and who you are hoping to attract',
-    'Read outloud your last 3 messages. Did you repond to them?'
+    'Did you respond to your last 3 messages? Why or why not?'
 ],
 // make the array for dares
 dareList: [
@@ -21,12 +21,11 @@ dareList: [
     "Message your last match that you want to meet their family",
     "Give your number to your last 5 matches",
     "Go to one of your matches' instagram and like the last 10 posts",
-    "Message any 5 of your matchesn asking 'why did you sleep with my ex?'",
+    "Message any 5 of your matches asking 'why did you sleep with my ex?'",
     "Ask your last match if they will go on a date with you",
     "Change your picture on tinder to an embarrassing one",
-    "Message 3 matches saying you only made a tinder to piss off your boyfriend",
     "Swipe right for the next 30 seconds and if they message, you have to hold a conversation with them",
-    "Google pick up lines and let the other player choose one to put in bio",
+    "Google pick up lines and let the other player choose one to put in your bio",
     "Swipe 2 times to the right and once to the left",
     'Message your last tinder match in detail why your last relationship did not work'
 
@@ -36,7 +35,10 @@ challengeList: [
     "Swipe right for 10 seconds and if you match, message them you want to hook up",
     "Let the other read your last tinder conversation",
     "Google worst turn offs and message 2 matches saying that's how you are",
-    "Change your bio to 'only here to hook up'"
+    "Change your bio to 'only here to hook up'",
+    'Read outloud your last 3 messages. Did you respond to them?',
+    "Message 3 matches saying you only made a tinder to piss off your boyfriend",
+    "Give your match the wrong number and then unmatch them"
 ]
 }
 
