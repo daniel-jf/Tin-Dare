@@ -33,7 +33,7 @@ dareList: [
 challengeList: [
     "Upload a provocative picture on your tinder",
     "Swipe right for 10 seconds and if you match, message them you want to hook up",
-    "Let your oponent read your last tinder conversation",
+    "Let the other read your last tinder conversation",
 
 ]
 }
@@ -114,9 +114,9 @@ point.onclick = function() {
     modal.style.display = "none";
     turn *= -1;
 
-    if (scoreboard.p1Points == 3) {
+    if (scoreboard.p1Points == 10) {
         alert("Congrats! "+ player1 + " won!")
-    } else if (scoreboard.p2Points == 3) {
+    } else if (scoreboard.p2Points == 10) {
         alert("Congrats! "+ player2 + " won!")
     }
 }
@@ -142,9 +142,9 @@ rPoint.onclick = function() {
     rModal.style.display = "none";
     turn *= -1;
 
-    if (scoreboard.p1Points == 3) {
+    if (scoreboard.p1Points == 10) {
         alert("Congrats! "+ player1 + " won!")
-    } else if (scoreboard.p2Points == 3) {
+    } else if (scoreboard.p2Points == 10) {
         alert("Congrats! "+ player2 + " won!")
     }
 }
