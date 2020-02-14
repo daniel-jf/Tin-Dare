@@ -6,13 +6,12 @@ truthList: [
     'Worst tinder date in detail',
     'Have you ever hooked up with a tinder date',
     'Do you take tinder seriously? Why or why not?',
-    'Message your last tinder match in deatil why your last relationship didn not work',
-    'Message a tinder match with the first letter O your biggest insecurity',
+    'Message a tinder match with the first letter D your biggest insecurity',
     'Describe in detail what your type is',
     'Admit your biggest mistake to your opponent and a match on tinder',
-    'Admit why you would not date youself and that most people do not learn until they date you',
+    'Admit why you would not date youself and what most people do not know until they date you',
     'Explain why you chose each picture on your profile and who you are hoping to attract',
-    'Read your last 3 messages. Did you repond to them?'
+    'Read outloud your last 3 messages. Did you repond to them?'
 ],
 // make the array for dares
 dareList: [
@@ -22,19 +21,22 @@ dareList: [
     "Message your last match that you want to meet their family",
     "Give your number to your last 5 matches",
     "Go to one of your matches' instagram and like the last 10 posts",
-    "Message any 5 of your matches saying 'asking why they slept with your ex?'",
+    "Message any 5 of your matchesn asking 'why did you sleep with my ex?'",
     "Ask your last match if they will go on a date with you",
     "Change your picture on tinder to an embarrassing one",
     "Message 3 matches saying you only made a tinder to piss off your boyfriend",
     "Swipe right for the next 30 seconds and if they message, you have to hold a conversation with them",
     "Google pick up lines and let the other player choose one to put in bio",
     "Swipe 2 times to the right and once to the left",
+    'Message your last tinder match in detail why your last relationship did not work'
+
 ],
 challengeList: [
     "Upload a provocative picture on your tinder",
     "Swipe right for 10 seconds and if you match, message them you want to hook up",
     "Let the other read your last tinder conversation",
-
+    "Google worst turn offs and message 2 matches saying that's how you are",
+    "Change your bio to 'only here to hook up'"
 ]
 }
 
@@ -51,15 +53,17 @@ const rModal = document.getElementById("myRModal");
 const rButton = document.getElementById('r');
 const rPoint = document.getElementById('rDid');
 const rNoPoint = document.getElementById('rNope');
+const rMessageID = document.getElementById('rMessage');
 
 const p1 = document.getElementById('player1');
 const p2 = document.getElementById('player2');
 
-const scoreboard = {p1Points: '', p2Points: ''};
+const scoreboard = {p1Points: 0, p2Points: 0};
 
 const player1 = 'Player 1';
 const player2 = 'Player 2';
 
+const messageID = document.getElementById('message');
 let turn = 1;
 
 
@@ -78,13 +82,13 @@ p2.textContent = "Player 2: "+scoreboard.p2Points;
 //For truth button
 tButton.onclick = function() {
     modal.style.display = "block";
-    document.getElementById('message').innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
+   messageID.innerText = masterList.truthList[Math.floor(Math.random() * masterList.truthList.length)];
 }
 
 //For dare button
 dButton.onclick = function() {
     modal.style.display = "block";
-    document.getElementById('message').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
+    messageID.innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
 
 }
 
@@ -92,9 +96,9 @@ dButton.onclick = function() {
 rButton.onclick = function() {
     rModal.style.display = "block";
     if (Math.floor(Math.random() * 2)) {
-       document.getElementById('rMessage').innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
+       rMessageID.innerText = masterList.dareList[Math.floor(Math.random() * masterList.dareList.length)];
     } else {
-    document.getElementById('rMessage').innerText = masterList.challengeList[Math.floor(Math.random() * masterList.challengeList.length)];
+    rMessageID.innerText = masterList.challengeList[Math.floor(Math.random() * masterList.challengeList.length)];
     }
 }
 
@@ -114,10 +118,10 @@ point.onclick = function() {
     modal.style.display = "none";
     turn *= -1;
 
-    if (scoreboard.p1Points == 10) {
+    if (scoreboard.p1Points >= 10) {
         alert("Congrats! "+ player1 + " won!")
-    } else if (scoreboard.p2Points == 10) {
-        alert("Congrats! "+ player2 + " won!")
+    } else if (scoreboard.p2Points >= 10) {
+         alert("Congrats! "+ player2 + " won!")
     }
 }
 
@@ -142,18 +146,14 @@ rPoint.onclick = function() {
     rModal.style.display = "none";
     turn *= -1;
 
-    if (scoreboard.p1Points == 10) {
+    if (scoreboard.p1Points >= 10) {
         alert("Congrats! "+ player1 + " won!")
-    } else if (scoreboard.p2Points == 10) {
+    } else if (scoreboard.p2Points >= 10) {
         alert("Congrats! "+ player2 + " won!")
     }
 }
-
 
 //For random nope button
 rNoPoint.onclick = function() {
     rModal.style.display = "none";
 }
-
-
-// create a function for random & did it gives 2 points and returns to game page 

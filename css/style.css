@@ -171,13 +171,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
 /* RANDOM MODAL */
 .rModal {
     display: none; /* Hidden by default */
@@ -206,7 +199,6 @@ h1 {
 /* The Close Button */
 #rDid {
     color: black;
-    float: left;
     font-size: 20px;
     font-weight: thin;
     border-radius: 20px;
@@ -217,7 +209,6 @@ h1 {
 
 #rNope {
     color: black;
-    float: inline-start;
     font-size: 20px;
     font-weight: thin;
     border-radius: 20px;
