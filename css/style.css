@@ -99,6 +99,37 @@ h1 {
     display: block;
 }
 
+#resetGame{
+    background-color: lightcoral;
+    color: black;
+    border-color: whitesmoke;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-width: thick;
+    margin-top: 20px;
+}
+
+
+#home {
+    background-color: lightcoral;
+    color: black;
+    border-color: whitesmoke;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-width: thick;
+    margin-top: 20px;
+}
+
+
+.buttomBottons {
+    display: flex;
+    flex-direction: row;
+}
+
 #t:hover{
     transform: scale(1.1);
 }
