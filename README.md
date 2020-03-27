@@ -1,4 +1,5 @@
 # Game-0-TinDare
+Checkout My LinkedIn: linked.com/in/danielj-francisco/
 
 Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
 <h2>Welcome Page:</h2>
