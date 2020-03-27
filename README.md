@@ -1,11 +1,21 @@
 # Game-0-TinDare
 
 Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
+<h2>Welcome Page:</h2>
+![Home Page](/assets/HomePage-TinDare.png)
+<h2>Game Page:</h2>
+![Game Page](/assets/GamePage-TinDare.png)
 
-What is Tin-Dare and why?
+<h2>What is Tin-Dare and why?</h2>
 Tin-Dare is a basic game of truth or dare with some twists involving the dating app, Tinder. This game is meant to play with a friend during various social gatherings. This game can be used as a party game to get some good laughs with friends or to break the ice with new friends. Although this game deals with other people as well, it is ultimately up to the players to decide if they want to complete the task or not. 
 
-User Stories:
+<h2>Technologigites Used:</h2>
+-HTML
+-CSS
+-JavaScript
+-VS Code
+
+<h2>User Stories:</h2>
 1. User will go onto the site
     1a. user clicks "Happy Swiping" button to start the game 
 2. Game starter is chosen by whoever was on tinder most recently
@@ -22,7 +32,7 @@ User Stories:
     8b. If user does not complete the task, user will choose "NOPE" button and will not receive the point. 
 9. The next players turn will start after the previous player chooses either of the choices saying the task was completed or not 
 
-Explanation of buttons:
+<h2>Explanation of buttons:</h2>
 - The "Happy Swiping" button starts the game 
 - Truth button will give a random Truth to the player
 - Dare button will give a random Dare to the player
@@ -32,6 +42,7 @@ Explanation of buttons:
 - The "LIKE!" button means the player completed the task and will receive a point 
 - The "NOPE!" button means the player did not complete and does not get a point 
 
-Challenges:
-I wanted the "like" and "nope" button to swipe left or right like how it would on the actual tinder app, but after trying to do some new modals my code would break.
-I wanted my "tinDARE" text to have a black lining around the letters but when I tried editing on CSS it didn't work.
+<h2>Challenges:</h2>
+-I wanted the "like" and "nope" button to swipe left or right like how it would on the actual tinder app, but after trying to do some new modals my code would break.
+-I wanted my "tinDARE" text to have a black lining around the letters but when I tried editing on CSS it didn't work.
+-I wanted the tinder logo to go between "tin" and "Dare"

@@ -177,6 +177,10 @@ h1 {
     border-width: medium;
     display: inline-block;
 }
+.slide-out-right {
+	-webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 
 #nope {
     color: black;
@@ -187,7 +191,10 @@ h1 {
     border-width: medium;
     display: inline-block;
 }
-  
+.slide-out-left {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 #did:hover,
 #did:focus {
     color: lightcoral;
@@ -238,6 +245,10 @@ h1 {
     border-width: medium;
     display: inline-block;
 }
+.slide-out-right {
+	-webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 
 #rNope {
     color: black;
@@ -247,6 +258,10 @@ h1 {
     background-color: lightpink;
     border-width: medium;
     display: inline-block;
+}
+.slide-out-left {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
   
 #rDid:hover,
