@@ -4,10 +4,13 @@ Checkout My LinkedIn: http://linkedin.com/in/danielj-francisco/
 Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
 
 <h2>Welcome Page:</h2>
-![Alt text](/assets/HomePage-TinDare.png)
+<div align="center">
+<img src="/assets/HomePage-TinDare.png" width="300px"></img>
+</div>
+<div align="center">
 <h2>Game Page:</h2>
-![Alt text](/assets/GamePage-TinDare.png)
-
+<img src="/assets/GamePage-TinDare.png" width="300px"></img>
+</div>
 <h2>What is Tin-Dare and why?</h2>
 Tin-Dare is a basic game of truth or dare with some twists involving the dating app, Tinder. This game is meant to play with a friend during various social gatherings. This game can be used as a party game to get some good laughs with friends or to break the ice with new friends. Although this game deals with other people as well, it is ultimately up to the players to decide if they want to complete the task or not. 
 
