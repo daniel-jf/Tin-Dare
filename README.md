@@ -1,4 +1,7 @@
 # Game-0-TinDare
+
+Play A Round! https://daniel-jf.github.io/Tin-Dare/
+
 Checkout My LinkedIn: http://linkedin.com/in/danielj-francisco/
 
 Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
@@ -15,11 +18,12 @@ Wireframe for Tin-Dare Game: https://imgur.com/a/knpyWFB
 Tin-Dare is a basic game of truth or dare with some twists involving the dating app, Tinder. This game is meant to play with a friend during various social gatherings. This game can be used as a party game to get some good laughs with friends or to break the ice with new friends. Although this game deals with other people as well, it is ultimately up to the players to decide if they want to complete the task or not. 
 
 <h2>Technologigites Used:</h2>
--HTML
--CSS
--JavaScript
--VS Code
-
+<ul>
+<li>-HTML</li>
+<li>-CSS</li>
+<li>-JavaScript</li>
+<li>-VS Code</li>
+</ul>
 <h2>User Stories:</h2>
  1. User will go onto the site
     1a. user clicks "Happy Swiping" button to start the game 
